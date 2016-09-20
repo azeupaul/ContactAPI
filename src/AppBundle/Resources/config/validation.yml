@@ -1,0 +1,31 @@
+AppBundle\Entity\Contact:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: email
+    properties:
+        name:
+            - NotBlank: ~
+            - Type: string
+        phoneNumber:
+            - NotBlank: ~
+            - Type: string
+        email:
+            - NotBlank: ~
+            - Email: ~
+            - Type: string
+
+AppBundle\Entity\User:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: username
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: email
+    properties:
+        username:
+            - NotBlank: ~
+            - Type: string
+        firstname:
+            - Type: string
+        lastname:
+            - Type: string
+        email:
+            - NotBlank: ~
+            - Email: ~
+            - Type: string

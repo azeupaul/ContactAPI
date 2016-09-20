@@ -1,0 +1,10 @@
+app:
+    resource: "@AppBundle/Controller/DefaultController.php"
+    type:     annotation
+
+contacts:
+    type:     rest
+    resource: AppBundle\Controller\ContactController
+users:
+    type:     rest
+    resource: AppBundle\Controller\UserController

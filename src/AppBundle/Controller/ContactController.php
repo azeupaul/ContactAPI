@@ -85,7 +85,7 @@ class ContactController extends Controller
         return $this->updateContact($request, false);
     }
 
-    public function updateContact(Request $request, $clearingMissing)
+    private function updateContact(Request $request, $clearingMissing)
     {
         $em = $this->getDoctrine()->getManager();
         $contact = $em->getRepository('AppBundle:Contact')->find($request->get('id'));

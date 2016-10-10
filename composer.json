@@ -1,5 +1,6 @@
 {
     "name": "pablo/contact",
+    "description": "A Simple contact app API REST for testing.",
     "license": "proprietary",
     "type": "project",
     "autoload": {

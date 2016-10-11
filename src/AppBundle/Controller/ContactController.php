@@ -8,7 +8,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Contact;
-use AppBundle\Form\ContactType;
+use AppBundle\Form\Type\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
